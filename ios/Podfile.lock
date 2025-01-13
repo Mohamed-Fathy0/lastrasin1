@@ -1191,7 +1191,7 @@ PODS:
     - FirebaseCoreInternal (~> 11.0)
     - GoogleUtilities/Environment (~> 8.0)
     - GoogleUtilities/Logger (~> 8.0)
-  - FirebaseCoreExtension (11.4.1):
+  - FirebaseCoreExtension (11.6.0):
     - FirebaseCore (~> 11.0)
   - FirebaseCoreInternal (11.6.0):
     - "GoogleUtilities/NSData+zlib (~> 8.0)"
