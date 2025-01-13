@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "279637501803",
+    "project_id": "raseen-ffb26",
+    "storage_bucket": "raseen-ffb26.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:279637501803:android:46daa7d54f28d1c78ace2e",
+        "android_client_info": {
+          "package_name": "com.example.rasin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "279637501803-3f6cciqllrtid4ml3l06d8ame3u9ho3o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rasin",
+            "certificate_hash": "03f62783fc36aaa9c3a887b8f572c08cfd3e9939"
+          }
+        },
+        {
+          "client_id": "279637501803-vmt7q1ti5cglgk5md00bffrlmlo8qfra.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvTc5oSv881IKxSn6N7wHvvxMzdtaKx9I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "279637501803-vmt7q1ti5cglgk5md00bffrlmlo8qfra.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "279637501803-aet0l5poqcog3sodeefcrjmj71aim662.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.rasin"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:279637501803:android:9dc2ac2b81f58d928ace2e",
+        "android_client_info": {
+          "package_name": "com.rasin.rasin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "279637501803-20jkjgfsas4nq22314qcn9fp6udjo4j4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rasin.rasin",
+            "certificate_hash": "761d0060183d94c3d64588f5870f7d4287d372f4"
+          }
+        },
+        {
+          "client_id": "279637501803-atjvmbqui9u92f8rkaihqqrvvnspnjto.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rasin.rasin",
+            "certificate_hash": "03f62783fc36aaa9c3a887b8f572c08cfd3e9939"
+          }
+        },
+        {
+          "client_id": "279637501803-vmt7q1ti5cglgk5md00bffrlmlo8qfra.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvTc5oSv881IKxSn6N7wHvvxMzdtaKx9I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "279637501803-vmt7q1ti5cglgk5md00bffrlmlo8qfra.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "279637501803-aet0l5poqcog3sodeefcrjmj71aim662.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.rasin"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
