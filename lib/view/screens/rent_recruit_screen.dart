@@ -4,8 +4,6 @@ import 'package:lastrasin1/view/screens/form_order_screen.dart';
 
 class RentRecruitScreen extends StatelessWidget {
   final String title;
-  final String backgroundImagePath =
-      'assets/images/background.jpg'; // ضع مسار الصورة هنا
 
   const RentRecruitScreen({super.key, required this.title});
 
@@ -17,8 +15,8 @@ class RentRecruitScreen extends StatelessWidget {
     final services = [
       ServiceItem('مساعدة منزلية', 'assets/house-cleaning.png',
           const Color(0xFF8B4513)), // بني داكن
-      ServiceItem(
-          'قيادة', 'assets/moving.png', const Color(0xFFA0522D)), // بني محروق
+      ServiceItem('قيادة', 'assets/driver-license.png',
+          const Color(0xFFA0522D)), // بني محروق
       // ServiceItem('عاملات نقل فوري', 'assets/driver-license.png',
       //     const Color(0xFFCD853F)), // بني فاتح
       // ServiceItem(
@@ -43,49 +41,38 @@ class RentRecruitScreen extends StatelessWidget {
         ),
         centerTitle: true,
       ),
-      body: Stack(
+      body: Column(
         children: [
-          // خلفية الصورة
-          Positioned.fill(
-            child: Image.asset(
-              backgroundImagePath,
-              fit: BoxFit.cover,
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Text(
+              'اختر نوع الخدمة',
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.w600,
+                color: Colors.brown[700], // لون النص بني
+              ),
             ),
           ),
-          Column(
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: Text(
-                  'اختر نوع الخدمة',
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w600,
-                    color: Colors.brown[700], // لون النص بني
-                  ),
-                ),
+          Expanded(
+            child: GridView.builder(
+              padding: const EdgeInsets.all(16.0),
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2,
+                crossAxisSpacing: 16.0,
+                mainAxisSpacing: 16.0,
+                childAspectRatio: 0.9,
               ),
-              Expanded(
-                child: GridView.builder(
-                  padding: const EdgeInsets.all(16.0),
-                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2,
-                    crossAxisSpacing: 16.0,
-                    mainAxisSpacing: 16.0,
-                    childAspectRatio: 0.9,
-                  ),
-                  itemCount: services.length,
-                  itemBuilder: (context, index) {
-                    return _buildServiceCard(
-                      serviceT: services[index].title,
-                      context: context,
-                      service: services[index],
-                      isRent: isRent,
-                    );
-                  },
-                ),
-              ),
-            ],
+              itemCount: services.length,
+              itemBuilder: (context, index) {
+                return _buildServiceCard(
+                  serviceT: services[index].title,
+                  context: context,
+                  service: services[index],
+                  isRent: isRent,
+                );
+              },
+            ),
           ),
         ],
       ),
